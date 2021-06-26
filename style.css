@@ -6,6 +6,9 @@ body {
     margin: 0;
     padding: 0;
     font-family: Helvetica, sans-serif;
+    /* background-image: url('images/web/s1\ ft1.png'), url('images/web/bg.png');
+    background-position: center 0px, center 20px;
+    background-repeat: no-repeat, no-repeat; */
 }
 
 #img-logo {
@@ -19,7 +22,7 @@ body {
 .nav {
     display: flex;
     justify-content: flex-end;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
@@ -50,6 +53,13 @@ body {
     background: url('images/web/s1\ ft1.png');
     background-size: auto;
     background-repeat: no-repeat;
+    background-position: center 0px;
+}
+
+.home-section div {
+    background-image: url('images/web/s1\ ft1.png');
+    color: red;
+    width: 1000px;
 }
 
 .home-section h1 {
@@ -69,7 +79,7 @@ body {
 
 .home-section button {
     background-color: #89CFF0;
-    border-color: #89CFF0;
+    border-color: black;
     border-radius: 40px;
     padding: 25px 20px 25px 20px;
     font-size: 1.2em;
@@ -77,4 +87,28 @@ body {
     margin-top: 140px;
 }
 
+/* About section */
 
+.about-section {
+    /* padding: 10rem 2rem; */
+    background-image: url('images/web/bg.png');
+    height: 2500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.about-section h1 {
+    font-size: 3rem;
+    margin: 0;
+    padding: 70px 0 80px 70px;
+}
+
+.about-section div {
+    background-color: white;
+    width: 55%;
+    padding: 20px;
+    font-size: 20px;
+    margin-left: 70px;
+    box-shadow: 0px 0px 30px 0px gray;
+}

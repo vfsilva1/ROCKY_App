@@ -12,7 +12,7 @@ body {
 }
 
 #img-logo {
-    position: absolute;
+    position: fixed;
     margin-top: 2rem;
     margin-left: 10rem;
 }
@@ -22,10 +22,11 @@ body {
 .nav {
     display: flex;
     justify-content: flex-end;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
+    background-color: black;
 }
 
 .nav-list {
@@ -187,3 +188,71 @@ body {
     color: white;
     padding: 50px;
 }
+
+/* Contact section */
+
+.contact-section {
+    background-color: yellow;
+    padding: 75px 0 75px 0;
+    justify-content: center;
+}
+
+.grid-container-contact {
+    display: grid;
+    color: white;
+    grid-template-columns: auto auto;
+    padding: 30px;
+    background-color: black;
+}
+
+.grid-item-contact {
+    text-align: left;
+    margin: 10px 10px 10px 40px;
+    height: 650px;
+    width: 560px;
+    font-size: 20px;
+}
+
+#header-contact-grid {
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+#header-contact-grid img {
+    position: relative;
+    top: 30px;
+}
+
+#info-contact-grid {
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.grid-container-contact i {
+    margin-top: 30px;
+}
+
+.fa-facebook:hover {
+    cursor: pointer;
+}
+
+.fa-linkedin:hover {
+    cursor: pointer;
+}
+
+.grid-container-contact i span {
+    padding: 20px;
+    font-size: 20px;
+}
+
+.yellow-icon {
+    color: yellow;
+}
+
+#location-address {
+    color: white;
+    font-size: 12px;
+}
+
+
+

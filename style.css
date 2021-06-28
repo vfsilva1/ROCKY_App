@@ -21,6 +21,17 @@ body {
     margin-left: 10rem;
 }
 
+@media (max-width: 700px) {
+    #img-logo {
+        text-align: center;
+    }
+
+    #img-logo img {
+        margin-top: 0.5rem;
+        width: 130px;
+    }
+}
+
 /* nav */
 
 .nav {
@@ -106,15 +117,17 @@ body {
     }
 
     .home-section h1{
-        font-size: 3rem;
+        font-size: 1.8rem;
+        margin-top: 100px;
     }
 
     .home-section p {
+        margin-top: 100px;
         font-size: 0.8rem;
     }
 
     .home-section button {
-        font-size: 0.8rem;
+        font-size: 1rem;
         width: 300px;
     }
 
@@ -131,16 +144,16 @@ body {
     background-repeat: no-repeat;
 }
 
-@media (max-width: 700px) {
-    .body-section {
-        background: none;
-    }
-}
-
 .body-section h1 {
     font-size: 3rem;
     margin: 0;
     padding: 70px 0 80px 70px;
+}
+
+@media (max-width: 700px) {
+    .body-section {
+        background: none;
+    }
 }
 
 /* About section */
@@ -155,12 +168,18 @@ body {
 }
 
 @media (max-width: 700px) {
-    .about-section h1 {
-        padding-bottom: 30px;
+    .body-section h1 {
+        padding: 50px 0px 20px 30px;
+        font-size: 2rem;
     }
 
     .about-section div{
-        width: 72%;
+        width: 78%;
+        margin: 0 20px 0 20px;
+    }
+
+    .about-section p {
+        font-size: 10px;
     }
 }
 
@@ -217,17 +236,30 @@ body {
 
 @media (max-width: 700px) {
     .services-section h1 {
-        padding-bottom: 0;
+        padding-top: 50px;
+    }
+
+    .grid-container-services {
+        padding: 0;
+        margin: 0;
     }
 
     .grid-item-services {
-        width: 500px;
-        height: 420px;
+        padding: 0;
+        margin: 0 20px 20px 20px;
+        width: 330px;
+        height: 320px;
         border-radius: 50px;
     }
 
-    .grid-container-services p {
-        font-size: 15px;
+    .grid-item-services p {
+        font-size: 0.8rem;
+        padding: 0 20px 20px 20px;
+    }
+
+    .grid-item-services h2 { 
+        font-size: 1.3rem;
+        padding-bottom: 20px;
     }
 
     .services {

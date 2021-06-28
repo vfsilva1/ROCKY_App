@@ -11,6 +11,10 @@ body {
     background-repeat: no-repeat, no-repeat; */
 }
 
+/* .body-div {
+    display: inline-table;
+} */
+
 #img-logo {
     position: absolute;
     margin-top: 2rem;
@@ -112,12 +116,18 @@ body {
 /* Body section */
 
 .body-section {
-    /* padding: 10rem 2rem; */
-    background-image: url('images/web/bg.png');
-    height: 2500px;
+    margin: auto;
+    background: url('images/web/bg.png');
+    height: 100%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+@media (max-width: 700px) {
+    .body-section {
+        background: none;
+    }
 }
 
 .body-section h1 {
@@ -137,6 +147,12 @@ body {
     box-shadow: 0px 0px 30px 0px gray;
 }
 
+@media (max-width: 700px) {
+    .about-section div{
+        width: 72%;
+    }
+}
+
 /* Services section */
 
 .services-section h1 {
@@ -145,7 +161,7 @@ body {
 
 .grid-container-services {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     padding: 30px;
 }
 
@@ -173,11 +189,22 @@ body {
     font-weight: bold;
 }
 
+@media (max-width: 700px) {
+    .grid-item-services {
+        width: 500px;
+        height: 420px;
+    }
+
+    .grid-container-services p {
+        font-size: 15px;
+    }
+}
+
 /* Differentials section */
 
 .grid-container-diff {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
     padding: 30px;
 }
 
@@ -204,6 +231,17 @@ body {
     padding: 50px;
 }
 
+@media (max-width: 700px) {
+    .grid-item-diff {
+        width: 400px;
+        height: 400px;
+    }
+
+    .grid-item-diff p {
+        font-size: 15px;
+    }
+}
+
 /* Contact section */
 
 .contact-section {
@@ -216,7 +254,7 @@ body {
     display: grid;
     align-items: center;
     color: white;
-    grid-template-columns: auto auto;
+    grid-template-columns: repeat(auto-fill, minmax(700px, 1fr));
     padding: 30px;
     background-color: black;
 }
@@ -275,6 +313,12 @@ body {
     margin-top: 30px;
     padding: 20px;
     width: 600px;
+}
+
+@media (max-width: 700px) {
+    #contact-form {
+        width: 500px;
+    }
 }
 
 .contact-form-input {

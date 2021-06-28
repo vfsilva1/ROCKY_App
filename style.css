@@ -30,6 +30,7 @@ body {
 }
 
 .nav-list {
+    list-style-type: none;
     display: flex;
     margin-right: 2rem;
 }
@@ -40,6 +41,10 @@ body {
     padding: 2rem;
     color: white;
     list-style: none;
+}
+
+.nav-list a:hover {
+    color: aqua;
 }
 
 /* Home section */
@@ -55,12 +60,6 @@ body {
     background-size: auto;
     background-repeat: no-repeat;
     background-position: center 0px;
-}
-
-.home-section div {
-    background-image: url('images/web/s1\ ft1.png');
-    color: red;
-    width: 1000px;
 }
 
 .home-section h1 {
@@ -79,7 +78,7 @@ body {
 }
 
 .home-section button {
-    background-color: #89CFF0;
+    background-color: aqua;
     border-style: hidden;
     border-radius: 40px;
     padding: 25px 20px 25px 20px;
@@ -89,9 +88,25 @@ body {
 }
 
 .home-section button:hover {
-    color: #89CFF0;
+    color: aqua;
     background-color: white;
     cursor: pointer;
+}
+
+@media (max-width: 700px) {
+    .home-section h1{
+        font-size: 3rem;
+    }
+
+    .home-section p {
+        font-size: 0.8rem;
+    }
+
+    .home-section button {
+        font-size: 0.8rem;
+        width: 300px;
+    }
+
 }
 
 /* Body section */
@@ -298,7 +313,7 @@ body {
     display: flex;
     align-items: center ;
     justify-content: center;
-    background-color: #89CFF0;
+    background-color: aqua;
     border-style: hidden;
     width: 100%;
     height: 70px;

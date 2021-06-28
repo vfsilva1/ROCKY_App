@@ -330,36 +330,39 @@ body {
         padding-bottom: 0;
     }
 
+    .grid-container-diff { 
+        padding: 0;
+        margin: 0;
+    }
+
     .grid-item-diff {
-        width: 400px;
+        width: 340px;
         height: 400px;
-        margin: auto;
         border-radius: 50px;
+        margin: 0 20px 0 20px;
+        padding: 0;
     }
 
     .grid-item-diff p {
-        font-size: 16px;
+        font-size: 0.8rem;
         width: 300px;
-        padding: 0 0 0 50px;
+        padding: 0 20px 0 20px;
         text-align: center;
     }
 
     .first-card {
         background: url('images/mobile/s4\ ft1.png');
         background-position: center;
-        background-size: cover;
     }
 
     .second-card {
         background: url('images/mobile/s4\ ft2.png');
         background-position: center;
-        background-size: cover;
     }
     
     .third-card {
         background: url('images/mobile/s4\ ft3.png');
         background-position: center;
-        background-size: cover;
     }
 }
 

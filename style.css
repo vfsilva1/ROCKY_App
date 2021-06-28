@@ -98,6 +98,13 @@ body {
 }
 
 @media (max-width: 700px) {
+    .home-section {
+        background: url('images/web/s1\ ft1.png');
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
     .home-section h1{
         font-size: 3rem;
     }
@@ -148,6 +155,10 @@ body {
 }
 
 @media (max-width: 700px) {
+    .about-section h1 {
+        padding-bottom: 30px;
+    }
+
     .about-section div{
         width: 72%;
     }
@@ -189,14 +200,49 @@ body {
     font-weight: bold;
 }
 
+.services {
+    background: url('images/web/s3\ ft1.png');
+    background-position: center;
+}
+
+.media {
+    background: url('images/web/s3\ ft2.png'); 
+    background-position: center;
+}
+
+.implementation {
+    background: url('images/web/s3\ ft3.png'); 
+    background-position: center;
+}
+
 @media (max-width: 700px) {
+    .services-section h1 {
+        padding-bottom: 0;
+    }
+
     .grid-item-services {
         width: 500px;
         height: 420px;
+        border-radius: 50px;
     }
 
     .grid-container-services p {
         font-size: 15px;
+    }
+
+    .services {
+        background: url('images/web/s3\ ft1.png');
+        background-position: center;
+    }
+
+    .media {
+        background: url('images/web/s3\ ft2.png');
+        background-position: center;
+    }
+
+    .implementation {
+        background: url('images/web/s3\ ft3.png');
+        background-position: center;
     }
 }
 
@@ -231,14 +277,57 @@ body {
     padding: 50px;
 }
 
+.first-card {
+    background: url('images/web/s4\ ft1.png');
+    background-position: center;
+    
+}
+
+.second-card {
+    background: url('images/web/s4\ ft2.png');
+    background-position: center;
+}
+
+.third-card {
+    background: url('images/web/s4\ ft3.png');
+    background-position: center;
+}
+
 @media (max-width: 700px) {
+    .differentials-section h1 {
+        padding-bottom: 0;
+    }
+
     .grid-item-diff {
         width: 400px;
         height: 400px;
+        margin: auto;
+        border-radius: 50px;
     }
 
     .grid-item-diff p {
-        font-size: 15px;
+        font-size: 16px;
+        width: 300px;
+        padding: 0 0 0 50px;
+        text-align: center;
+    }
+
+    .first-card {
+        background: url('images/mobile/s4\ ft1.png');
+        background-position: center;
+        background-size: cover;
+    }
+
+    .second-card {
+        background: url('images/mobile/s4\ ft2.png');
+        background-position: center;
+        background-size: cover;
+    }
+    
+    .third-card {
+        background: url('images/mobile/s4\ ft3.png');
+        background-position: center;
+        background-size: cover;
     }
 }
 

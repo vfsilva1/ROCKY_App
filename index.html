@@ -2,7 +2,7 @@
 <html>
     <head>
         <title>ROCKY</title>
-        <meta http-equiv="refresh" content="11111111111111111">
+        <meta http-equiv="refresh" content="2">
         <script src="https://kit.fontawesome.com/21620e66e1.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="style.css">
     </head>
@@ -43,7 +43,7 @@
         <section id="home-section" class="home-section">
             <h1>FULL DIGITAL PERFORMANCE</h1>
             <p>Lorem Ipsum is simply dummy text of the <span style="color: yellow;">printing and typesetting industry.</span> Lorem Ipsum has been the industry's standard dummy</p>
-            <button onclick="location.href = 'https://rocky.ag/';">ENTRE EM CONTATO AGORA</button>
+            <button onclick="window.open('https://rocky.ag/', '_blank')" >ENTRE EM CONTATO AGORA</button>
         </section>
 
         <!-- END HOME SECTION -->
@@ -126,10 +126,10 @@
                             <img src="images/web/logo.png">
                         </div>
                         <div>
-                            <i onclick="location.href = 'https://www.facebook.com/rockypublicidade/'" class="fab fa-facebook fa-3x"></i>
+                            <i onclick="window.open('https://www.facebook.com/rockypublicidade/', '_blank')" class="fab fa-facebook fa-3x"></i>
                         </div>
                         <div>
-                            <i onclick="location.href = 'https://www.linkedin.com/company/rocky-ag/'" class="fab fa-linkedin fa-3x"></i>
+                            <i onclick="window.open('https://www.linkedin.com/company/rocky-ag/', '_blank')" class="fab fa-linkedin fa-3x"></i>
                         </div>
                     </div>  
                     <div id="info-contact-grid">
@@ -150,9 +150,23 @@
                     <p style="color: aqua;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                 </div>
                 <div class="grid-item-contact">
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+                    <form id="contact-form">
+                        <div class="contact-form-input">
+                            <input type="text" placeholder="Nome">
+                        </div>
+                        <div class="contact-form-input">
+                            <input type="email" placeholder="E-mail">
+                        </div>
+                        <div class="contact-form-input">
+                            <input type="number" placeholder="Investimento mensal">
+                        </div>
+                        <div class="contact-form-input">
+                            <textarea name="" placeholder="Mensagem"></textarea>
+                        </div>
+                        <div id="send-button-div">
+                            <button>ENVIAR MENSAGEM</button>
+                        </div>
+                    </form>
                 </div>
             </div>
         </section>

@@ -12,7 +12,7 @@ body {
 }
 
 #img-logo {
-    position: fixed;
+    position: absolute;
     margin-top: 2rem;
     margin-left: 10rem;
 }
@@ -22,11 +22,11 @@ body {
 .nav {
     display: flex;
     justify-content: flex-end;
-    position: fixed;
+    position: absolute;
     top: 0;
     left: 0;
     width: 100%;
-    background-color: black;
+    /* background-color: black; */
 }
 
 .nav-list {
@@ -80,7 +80,7 @@ body {
 
 .home-section button {
     background-color: #89CFF0;
-    border-color: black;
+    border-style: hidden;
     border-radius: 40px;
     padding: 25px 20px 25px 20px;
     font-size: 1.2em;
@@ -199,6 +199,7 @@ body {
 
 .grid-container-contact {
     display: grid;
+    align-items: center;
     color: white;
     grid-template-columns: auto auto;
     padding: 30px;
@@ -254,5 +255,59 @@ body {
     font-size: 12px;
 }
 
+#contact-form {
+    background-color: gray;
+    margin-top: 30px;
+    padding: 20px;
+    width: 600px;
+}
 
+.contact-form-input {
+    padding: 15px;
+    
+}
+
+#contact-form textarea {
+    width: 100%;
+    outline: none;
+    resize: none;
+    height: 150px;
+    padding: 10px 0 0 10px;
+}
+
+#contact-form textarea::placeholder {
+    font-size: 25px;
+    padding: 5px;
+    color: rgba(128, 128, 128, 0.5);
+}
+
+#contact-form input {
+    width: 100%;
+    height: 60px;
+    outline: none;
+    padding-left: 0;
+}
+
+#contact-form input::placeholder {
+    font-size: 25px;
+    padding: 10px;
+    color: rgba(128, 128, 128, 0.5);
+}
+
+#contact-form button {
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+    background-color: #89CFF0;
+    border-style: hidden;
+    width: 100%;
+    height: 70px;
+    padding: 25px 20px 25px 20px;
+    font-size: 1.2em;
+    color: white;
+}
+
+#send-button-div {
+    padding: 15px;
+}
 

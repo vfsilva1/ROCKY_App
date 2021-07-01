@@ -561,6 +561,7 @@ a {
 #send-button-div input {
     font-size: 20px;
     background-color: aqua;
+    color: white;
     border: transparent;
 }
 

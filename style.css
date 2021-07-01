@@ -543,6 +543,12 @@ html {
     padding: 15px;
 }
 
+#send-button-div input {
+    font-size: 20px;
+    background-color: aqua;
+    border: transparent;
+}
+
 @media (max-width: 700px) {
     .contact-section {
         width: 100%;

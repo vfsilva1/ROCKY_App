@@ -9,13 +9,13 @@
         <link rel="stylesheet" href="style.css">
     </head>
     
-    <body>
+    <body onscroll="navBarScroll()" >
         <header>
-            <div class="container">
+            <div class="container" >
         
                 <!-- START NAV-BAR -->
         
-                <nav class="nav">
+                <nav class="nav" id="nav">
 
                     <button class="hamburger" id="hamburger">
                         <i class="fas fa-bars"></i>
@@ -167,21 +167,21 @@
                         <p style="color: aqua;">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
                     </div>
                     <div class="grid-item-contact form-grid">
-                        <form id="contact-form">
+                        <form name="contactForm" onsubmit="return ValidateForm()" id="contact-form">
                             <div class="contact-form-input">
-                                <input type="text" placeholder="Nome">
+                                <input type="text" placeholder="Nome" name="name">
                             </div>
                             <div class="contact-form-input">
-                                <input type="email" placeholder="E-mail">
+                                <input type="email" placeholder="E-mail" name="email">
                             </div>
                             <div class="contact-form-input">
-                                <input type="number" placeholder="Investimento mensal">
+                                <input type="number" step="0.01" placeholder="Investimento mensal" name="investiment">
                             </div>
                             <div class="contact-form-input">
-                                <textarea name="" placeholder="Mensagem"></textarea>
+                                <textarea id="messageArea" placeholder="Mensagem" name="message"></textarea>
                             </div>
                             <div id="send-button-div">
-                                <button><span>ENVIAR MENSAGEM</span></button>
+                                <input type="submit" value="ENVIAR MENSAGEM">
                             </div>
                         </form>
                     </div>

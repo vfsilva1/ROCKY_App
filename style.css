@@ -1,45 +1,18 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
 a {
     text-decoration: none;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: Helvetica, sans-serif;
-}
-
-html {
-    scroll-behavior: smooth;
-}
-
-#img-logo {
-    position: absolute;
-    margin-top: 2rem;
-    margin-left: 10rem;
-}
-
-@media (max-width: 700px) {
-    #img-logo {
-        text-align: center;
-    }
-
-    #img-logo img {
-        margin-top: 0.5rem;
-        width: 130px;
-    }
-
-    .nav img {
-        width: 40%;
-        /* margin-left: 90px; */
-        padding-right: 110px;
-    }
-
-}
-
 .container {
-    padding: 10px;
+    padding: 0;
     margin: 0;
-    background-color: black;
 }
 
 /* nav */
@@ -48,10 +21,10 @@ html {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    position: fixed;
+    position: absolute;
     justify-content: space-between;
     padding: 10px;
-    width: 95%;
+    width: 98.95%;
 }
 
 .nav-list {
@@ -89,9 +62,20 @@ html {
     outline: none;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1024px) {
     .nav {
+        display: block;
         position: absolute;
+    }
+
+    .nav a img {
+        position: absolute;
+        top:0;
+        left:0;
+        right:0;
+        bottom:0;
+        margin: 15px auto;
+        width: 35%;
     }
 
     .nav-list {
@@ -110,10 +94,12 @@ html {
 
     .hamburger {
         display: block;
+        font-size: 35px;
     }
 
     .nav-list.show {
         display: flex;
+        margin: auto;
     }
 }
 
@@ -163,7 +149,7 @@ html {
     cursor: pointer;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1024px) {
     .home-section {
         background: url('images/web/s1\ ft1.png');
         background-size: cover;
@@ -172,7 +158,7 @@ html {
     }
 
     .home-section h1{
-        font-size: 1.8rem;
+        font-size: 1.6rem;
         margin-top: 100px;
     }
 
@@ -205,7 +191,7 @@ html {
     padding: 70px 0 80px 70px;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1024px) {
     .body-section {
         background: none;
     }
@@ -222,7 +208,7 @@ html {
     box-shadow: 0px 0px 30px 0px gray;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1024px) {
     .body-section h1 {
         padding: 50px 0px 20px 30px;
         font-size: 2rem;
@@ -289,7 +275,7 @@ html {
     background-position: center;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1024px) {
     .services-section h1 {
         padding-top: 50px;
     }
@@ -380,7 +366,7 @@ html {
     background-position: center;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1024px) {
     .differentials-section h1 {
         padding-bottom: 0;
     }
@@ -505,6 +491,7 @@ html {
     resize: none;
     height: 150px;
     padding: 10px 0 0 10px;
+    font-size: 100%;
 }
 
 #contact-form textarea::placeholder {
@@ -518,6 +505,7 @@ html {
     height: 60px;
     outline: none;
     padding-left: 0;
+    font-size: 100%;
 }
 
 #contact-form input::placeholder {
@@ -549,7 +537,7 @@ html {
     border: transparent;
 }
 
-@media (max-width: 700px) {
+@media (max-width: 1024px) {
     .contact-section {
         width: 100%;
     }
@@ -603,14 +591,6 @@ html {
         height: 80%;
         padding: 0;
         margin: 10px 0 0 0;
-    }
-
-    #send-button-div button {
-        margin-top: 30px;
-    }
-
-    #send-button-div button span {
-        font-size: 1.5rem;
     }
 
     .contact-form-input {

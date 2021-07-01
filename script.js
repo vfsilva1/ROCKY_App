@@ -8,6 +8,21 @@ window.onload = function () {
     });
 };
 
+// Scroll Nav-bar
+window.onscroll = function() {navBarScroll()};
+
+function NavBarScroll() {
+    if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.getElementById("nav").style.position = 'fixed'
+        document.getElementById("nav").style.backgroundColor = 'black';
+    }
+    else {
+        document.getElementById("nav").style.position = 'absolute'
+        document.getElementById("nav").style.backgroundColor = 'transparent';
+    }
+}
+
+// Form validation function
 function ValidateForm() {
     let name = document.forms["contactForm"]["name"];
     let email = document.forms["contactForm"]["email"];
@@ -41,10 +56,4 @@ function ValidateForm() {
 
     alert('Mensagem enviada com sucesso!')
     return true
-}
-
-function navBarScroll() {
-    console.log('SCROLL')
-    document.getElementById("nav").style.backgroundColor = 'black';
-    document.getElementById("nav").style.width = '97%';
 }

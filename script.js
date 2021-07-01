@@ -8,17 +8,29 @@ window.onload = function () {
     });
 };
 
+function CloseMenu() {
+    if (window.innerWidth <= 1024) 
+        document.getElementById('nav-list').classList.toggle('show');
+}
+
 // Scroll Nav-bar
 window.onscroll = function() {navBarScroll()};
 
 function NavBarScroll() {
     if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
         document.getElementById("nav").style.position = 'fixed'
-        document.getElementById("nav").style.backgroundColor = 'black';
+        document.getElementById("nav").style.backgroundColor = 'black'
+        document.getElementById("nav").style.zIndex = '1'
+        document.getElementById("contact").style.backgroundColor = 'aqua'
+        document.getElementById("contact").style.borderRadius = '30px'
+        document.getElementById("contact").style.color = 'white'
     }
     else {
         document.getElementById("nav").style.position = 'absolute'
-        document.getElementById("nav").style.backgroundColor = 'transparent';
+        document.getElementById("nav").style.backgroundColor = 'transparent'
+        document.getElementById("contact").style.color = 'aqua'
+        document.getElementById("contact").style.backgroundColor = 'transparent'
+        document.getElementById("contact").style.borderRadius = '0'
     }
 }
 

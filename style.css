@@ -33,7 +33,7 @@ a {
     justify-content: center;
     list-style-type: none;
     margin: 0;
-    padding: 0;
+    padding: 0 60px;
 }
 
 .nav-list li a {
@@ -47,6 +47,18 @@ a {
 
 .nav-list a:hover {
     color: aqua;
+}
+
+.nav a img { 
+    margin-left: 60px;
+}
+
+#contact {
+    color: aqua;
+}
+
+#contact:hover {
+    color: white;
 }
 
 .hamburger {
@@ -94,12 +106,25 @@ a {
 
     .hamburger {
         display: block;
-        font-size: 35px;
+    }
+
+    .hamburger i {
+        font-size: 210%;
     }
 
     .nav-list.show {
         display: flex;
         margin: auto;
+    }
+
+    #contact {
+        width: 150px;
+    }
+}
+
+@media (max-width: 750px) {
+    .hamburger i {
+        font-size: 100%;
     }
 }
 

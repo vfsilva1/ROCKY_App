@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>ROCKY</title>
+        <meta charset="utf-8">
+        <title>Rocky - Marketing Digital com Performance</title>
+        <meta name="description" content="Marketing Digital para Empresas que querem Resultados.">
         <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1" />
-        <meta http-equiv="refresh" content="2000000000">
         <script src="https://kit.fontawesome.com/21620e66e1.js" crossorigin="anonymous"></script>
         <script type="text/javascript" src="script.js"></script>
         <link rel="stylesheet" href="style.css">
@@ -22,29 +23,29 @@
                     </button>
 
                     <div class="logo">
-                        <a href="#home-section">
-                            <img src="images/web/logo.png" id="rocky-logo">
+                        <a href="https://rocky.ag/" target="_blank">
+                            <img src="images/web/logo.png" id="rocky-logo" alt="Rocky Logo">
                         </a>
                     </div>
 
                     <ul class="nav-list" id="nav-list">
                         <li>
-                            <a href="#about-section">SOBRE A ROCKY</a>
+                            <a href="#about-section" onclick="CloseMenu()">SOBRE A ROCKY</a>
                         </li>
                         <li>
-                            <a href="#services-section">SERVIÇOS</a>
+                            <a href="#services-section" onclick="CloseMenu()">SERVIÇOS</a>
                         </li>
                         <li>
-                            <a href="#differentials-section">DIFERENCIAIS</a>
+                            <a href="#differentials-section" onclick="CloseMenu()">DIFERENCIAIS</a>
                         </li>
                         <li>
-                            <a href="#job-section">TRABALHE CONOSCO</a>
+                            <a href="https://rocky.gupy.io/" target="_blank" onclick="CloseMenu()">TRABALHE CONOSCO</a>
                         </li>
                         <li>
-                            <a href="#contact-section">CONTATO</a>
+                            <a href="#contact-section" id="contact" onclick="CloseMenu()">CONTATO</a>
                         </li>
                         <li>
-                            <a href="#blog-section">BLOG</a>
+                            <a href="#blog-section" onclick="CloseMenu()">BLOG</a>
                         </li>
                     </ul>
 
@@ -57,7 +58,7 @@
                 <section id="home-section" class="home-section">
                     <h1>FULL DIGITAL PERFORMANCE</h1>
                     <p>Lorem Ipsum is simply dummy text of the <span style="color: yellow;">printing and typesetting industry.</span> Lorem Ipsum has been the industry's standard dummy</p>
-                    <button onclick="window.open('https://rocky.ag/', '_blank')" >ENTRE EM CONTATO AGORA</button>
+                    <button onclick="document.getElementById('contact-section').scrollIntoView();" >ENTRE EM CONTATO AGORA</button>
                 </section>
         
                 <!-- END HOME SECTION -->
